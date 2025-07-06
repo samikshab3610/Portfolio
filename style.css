@@ -1,0 +1,190 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(44, 44, 122);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(180, 180, 240);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            font-size: 1.01rem;
+            margin: 30px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 57px 0;
+        }
+
+        .firstsection>div {
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px 0;
+            }
+
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rightsection img {
+            max-width: 73%;
+            height: auto;
+            display: block;
+        }
+
+        .purple {
+            color: rgb(154, 92, 211);
+        }
+
+        .text-grey {
+            color: gray;
+            font-size: 0.9rem;
+        }
+
+        #element {
+            color: rgb(154, 92, 211);
+        }
+
+        .skills,
+        .projects,
+        .contact,
+        .about {
+            padding: 60px 60px;
+        }
+
+        .skills h3,
+        .projects h3,
+        .contact h3,
+        .about h3 {
+            font-size: 32px;
+            /* color: #ffffff; */
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills-list span {
+            background-color: rgb(118 98 167);
+            color: #f0f0f0;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .skills-list span:hover {
+            color: rgb(180, 180, 240);
+            font-size: 1.02rem;
+        }
+
+        .projects ul {
+            list-style: none;
+        }
+
+        .projects li {
+            background-color: rgb(118 98 167);
+            margin-bottom: 12px;
+            padding: 12px 18px;
+            border-radius: 6px;
+        }
+
+        .projects li:hover {
+            background-color: rgb(42, 42, 80);
+            color: rgb(135, 135, 204);
+            font-size: 1.02rem;
+        }
+
+        .contact p,
+        .about p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+
+        .contact p a {
+            margin-bottom: 10px;
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+        .contact p a:hover {
+            margin-bottom: 10px;
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+
+        footer {
+            background-color: rgb(34, 25, 44);
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 127px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer>.footer-rights {
+            text-align: center;
+        }
