@@ -175,10 +175,13 @@
             display: flex;
             margin: 23px 127px;
             justify-content: space-evenly;
+            height: auto;
         }
 
         .footer ul {
             list-style: none;
+            text-decoration: none;
+            color: white;
         }
 
         .footer>div {
