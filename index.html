@@ -11,21 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-
-    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Samiksha's Developer Portfolio</div>
-            <div class="right">
-                <ul>
+            <div class="nav-container">
+                <div class="logo">Samiksha's Developer Portfolio</div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="skills.html">Skills</a></li>
-                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -39,15 +41,6 @@
                 <span id="element"></span>
             </div>
             <div class="rightsection"><img src="bg9.png" alt=""></div>
-        </section>
-        <hr>
-        <section class="contact" id="contact">
-            <h3>Contact Me</h3>
-            <p><i class="fas fa-envelope"></i>samikshabhore7636@gmail.com</p>
-            <p><i class="fab fa-linkedin"></i> <a
-                    href="https://www.linkedin.com/in/samiksha-bhore-6ab7a0291/">LinkedIn</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/samikshab3610">GitHub</a></p>
-            <p>Location: Pune, India</p>
         </section>
     </main>
 
@@ -96,6 +89,13 @@
             typeSpeed: 50,
         });
     </script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("menu-open");
+        }
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My CV - Samiksha</title>
+  <link rel="stylesheet" href="cv-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Samiksha's Portfolio</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cv-container">
+    <h1>Samiksha Bhore</h1>
+
+    <section class="cv-section">
+      <h2>👩‍🎓 Education</h2>
+      <p><strong>B.E. in Artificial Intelligence & Machine Learning</strong><br>Zeal College of Engineering, Pune<br>2022 - Present</p>
+    </section>
+
+    <section class="cv-section">
+      <h2>💼 Experience</h2>
+      <p><strong>Web Development Intern</strong> - CodeVerse (Remote)<br>Jan 2025 – Mar 2025</p>
+    </section>
+
+    <section class="cv-section">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>Java, C++, Python (Basic)</li>
+        <li>Git & GitHub</li>
+        <li>UI/UX using Figma</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>📜 Projects</h2>
+      <ul>
+        <li>Developer Portfolio Website</li>
+        <li>Todo App (React)</li>
+        <li>Blog Website (PHP + MySQL)</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>📞 Contact</h2>
+      <p>Email: samikshabhore7636@gmail.com</p>
+      <p>LinkedIn | GitHub | Pune, India</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Samiksha's Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("menu-open");
+    }
+  </script>
+</body>
+</html>

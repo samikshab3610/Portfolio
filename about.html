@@ -16,14 +16,19 @@
 <body>
   <header>
     <nav>
-      <div class="left">Samiksha's Developer Portfolio</div>
-      <div class="right">
-        <ul>
+      <div class="nav-container">
+        <div class="logo">Samiksha's Developer Portfolio</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -32,11 +37,18 @@
   <main>
     <section class="about" id="about">
       <h3>About Me</h3>
-      <p>I'm a third-year AIML (Artificial Intelligence and Machine Learning) student based in Pune, India, with a strong passion for web development and coding. As an aspiring full stack developer, I'm currently enhancing my skills to build elegant, functional, and user-friendly websites. I have a deep interest in artificial intelligence, emerging technologies, and how they can be used to solve real-world problems.</p>
+      <p>I'm a third-year AIML (Artificial Intelligence and Machine Learning) student based in Pune, India, with a
+        strong passion for web development and coding. As an aspiring full stack developer, I'm currently enhancing my
+        skills to build elegant, functional, and user-friendly websites. I have a deep interest in artificial
+        intelligence, emerging technologies, and how they can be used to solve real-world problems.</p>
 
-      <p>With a solid foundation in programming and problem-solving, I enjoy working on projects that challenge my creativity and technical skills. I constantly explore new tools, frameworks, and technologies to stay updated in this fast-paced tech world. My goal is to become a confident and skilled developer who contributes to impactful tech solutions.</p>
+      <p>With a solid foundation in programming and problem-solving, I enjoy working on projects that challenge my
+        creativity and technical skills. I constantly explore new tools, frameworks, and technologies to stay updated in
+        this fast-paced tech world. My goal is to become a confident and skilled developer who contributes to impactful
+        tech solutions.</p>
 
-      <p>Beyond tech, I’m driven by curiosity, learning, and continuous growth. I believe collaboration, empathy, and purpose are key to building products that matter.</p>
+      <p>Beyond tech, I’m driven by curiosity, learning, and continuous growth. I believe collaboration, empathy, and
+        purpose are key to building products that matter.</p>
     </section>
   </main>
 
@@ -59,6 +71,13 @@
       www.samikshasportfolio.com | All rights reserved
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("menu-open");
+    }
+  </script>
+
 </body>
 
 </html>

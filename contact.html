@@ -12,11 +12,17 @@
 </head>
 
 <body>
+
   <header>
     <nav>
-      <div class="left">Samiksha's Developer Portfolio</div>
-      <div class="right">
-        <ul>
+      <div class="nav-container">
+        <div class="logo">Samiksha's Developer Portfolio</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
@@ -29,11 +35,24 @@
 
   <main>
     <section class="contact" id="contact">
-      <h3>Contact Me</h3>
-      <p><i class="fas fa-envelope"></i> samikshabhore7636@gmail.com</p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/samiksha-bhore-6ab7a0291/">LinkedIn</a></p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/samikshab3610">GitHub</a></p>
-      <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Contact Me</h2>
+          <!-- CV button - will show first on mobile -->
+          <a href="cv.html" class="cv-button mobile-first">CV</a>
+
+          <!-- Contact details -->
+          <p><i class="fas fa-envelope"></i> samikshabhore7636@gmail.com</p>
+          <p><i class="fab fa-linkedin"></i> LinkedIn</p>
+          <p><i class="fab fa-github"></i> GitHub</p>
+          <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+        </div>
+
+        <!-- On desktop, CV button appears here -->
+        <div class="contact-right desktop-only">
+          <a href="cv.html" class="cv-button">CV</a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -56,6 +75,13 @@
       www.samikshasportfolio.com | All rights reserved
     </div>
   </footer>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("menu-open");
+  }
+</script>
+
 </body>
 
 </html>
